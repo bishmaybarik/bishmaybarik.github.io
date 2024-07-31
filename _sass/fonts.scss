@@ -53,3 +53,21 @@
        url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.ttf') format('truetype'),
        url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg#NotoSans') format('svg');
 }
+
+.social-links {
+  margin-top: 20px;
+  font-size: 14px; /* Adjust the size as needed */
+}
+
+.social-links a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px; /* Adjust the size as needed */
+}
+
+.social-links i {
+  margin-right: 5px; /* Adjust spacing as needed */
+}
+
