@@ -5,8 +5,8 @@ title: Research Experience (Website under Construction)
 
 # Academic Dissertations
 
-- ** Postgraduate Dissertation: ** To be updated
-- ** Undergraduate Dissertation: ** To be updated
+- **Postgraduate Dissertation:** To be updated
+- **Undergraduate Dissertation:** To be updated
 
 # Research Experience
 
