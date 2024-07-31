@@ -63,11 +63,12 @@
   display: block;
   margin-bottom: 10px;
   text-decoration: none;
-  color: inherit;
+  color: blue; /* Make the links blue */
   font-size: 14px; /* Adjust the size as needed */
 }
 
 .social-links i {
   margin-right: 5px; /* Adjust spacing as needed */
+  color: blue; /* Make the icons blue */
 }
 
