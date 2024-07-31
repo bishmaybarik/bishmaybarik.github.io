@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[CV](/assets/bishmay_CV.pdf)
+[VITA](/assets/bishmay_CV.pdf)
 
 # About
 
