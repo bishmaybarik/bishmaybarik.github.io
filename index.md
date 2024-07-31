@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[CV](/assets/bishmay_CV.pdf)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[GitHub](https://github.com/bishmaybarik)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Twitter](https://x.com/bishmayy)&nbsp;&nbsp;&nbsp;&nbsp;[LinkedIn](https://www.linkedin.com/in/bishmaybarik/)&nbsp;&nbsp;&nbsp;&nbsp;[Mail](mailto:bishmaykbarik@gmail.com)
+[CV](/assets/bishmay_CV.pdf)&nbsp;&nbsp;&nbsp;&nbsp;[GitHub](https://github.com/bishmaybarik)&nbsp;&nbsp;&nbsp;&nbsp;[Twitter](https://x.com/bishmayy)&nbsp;&nbsp;&nbsp;&nbsp;[LinkedIn](https://www.linkedin.com/in/bishmaybarik/)&nbsp;&nbsp;&nbsp;&nbsp;[Mail](mailto:bishmaykbarik@gmail.com)
 
 # About
 
