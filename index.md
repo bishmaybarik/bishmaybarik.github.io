@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[VITA](/assets/bishmay_CV.pdf) | [Research Experience](/research_experience.md/)
+[VITA](/assets/bishmay_CV_updated.pdf) | [Research Experience](/research_experience.md/)
 
 # About
 
