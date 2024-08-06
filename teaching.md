@@ -1,10 +1,14 @@
 ---
 layout: default
+title: Teaching
 ---
-## Teaching
 
-# Shiv Nadar University
-- Graduate Teaching Assistant
-  - MAT101 - Calculus - 1 (Dr. Niteesh Sahni)
-  - ECO461 - International Economics (Dr. Trishita Ray Barman)
+## Teaching Experience
+
+### Shiv Nadar University
+**Graduate Teaching Assistant**
+- **MAT101 - Calculus I**  
+  *Instructor: Dr. Niteesh Sahni*
   
+- **ECO461 - International Economics**  
+  *Instructor: Dr. Trishita Ray Barman*
