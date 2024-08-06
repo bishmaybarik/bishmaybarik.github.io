@@ -22,7 +22,7 @@
   <div class="wrapper">
     <header>
       <h1><a id="name" href="{{ '/' | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-                    
+
       {% if site.logo %}
         <img src="{{ site.logo | relative_url }}" alt="Logo" />
       {% endif %}
@@ -33,6 +33,14 @@
         <a href="https://x.com/bishmayy" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
         <a href="mailto:bishmaykbarik@gmail.com"><i class="fas fa-envelope"></i> Mail</a>
       </div>
+
+      <nav>
+        <ul>
+          <li><a href="/assets/bishmay_CV_updated.pdf">VITA</a></li>
+          <li><a href="/research_experience.md/">Research Experience</a></li>
+          <li><a href="/research_projects.md/">Research Projects</a></li>
+        </ul>
+      </nav>
 
       {% if site.show_downloads %}
       <ul class="downloads">
