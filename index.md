@@ -1,5 +1,3 @@
-***** MARKDOWN ******
-
 ---
 layout: default
 ---
