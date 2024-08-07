@@ -2,7 +2,12 @@
 layout: default
 ---
 
-[VITA](/assets/bishmay_CV_4.pdf)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Research Experience](/research_experience.md/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Research Projects](/research_projects.md/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Teaching](/teaching.md/)
+<div class="link-container">
+    <a href="/assets/bishmay_CV_4.pdf">VITA</a>
+    <a href="/research_experience.md/">Research Experience</a>
+    <a href="/research_projects.md/">Research Projects</a>
+    <a href="/teaching.md/">Teaching</a>
+</div>
 
 # About
 
