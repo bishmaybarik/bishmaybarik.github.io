@@ -13,6 +13,7 @@ layout: default
 
 # 2. An Environmental Kuznet’s Curve Analysis for River Economies: A Case Study on Ganga and Yamuna
 **Software(s) Used:** Stata, R & Excel
+
 **Supervisor:** [Dr. Ram Ranjan](https://snu.edu.in/faculty/ram-ranjan/) | **Co-author:** Manya Pahwa (2024, Shiv Nadar University)
 
 <p style="text-align: justify;">
