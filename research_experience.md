@@ -4,17 +4,9 @@ title: Research Experience (Website under Construction)
 ---
 ## Research Experience
 
-# Academic Dissertations
+#  1. Research Assistant (2024 - Present)
+**PIs:** [Dr. Nirupama Kulkarni]([https://punarjitroyc.weebly.com](https://www.nirupamakulkarni.com)) & [Dr. Satyajit Chatterjee](https://sites.google.com/site/chatterjeesatyajit/home)
 
-- **Postgraduate Dissertation:** To be updated
-- **Undergraduate Dissertation:** To be updated
-
-# Research Experience
-
-I have been involved in various research projects, focusing on different aspects of macroeconomics and economic growth. My research work includes:
-
-- **A1:** To be updated
-- **A2:** To be updated
-- **A3:** To be updated
-
-Notes about each experience - to be updated (Website under construction)
+<p style="text-align: justify;">
+<b style="color: #000000;">Abstract:</b> Overconfidence and Procrastination, are two vast and distinct areas in the field of Behavioural Economics. This study tries to construct a bridge between both these areas and understand whether an overconfident individual is more likely, less likely or does it have no effect on procrastination of a particular task. Over-confidence among the students has been captured through the Cognitive Reflection Test and self-evaluation methods, followed by observing the identified over-confident students’ behaviour on delaying tasks, hence capturing procrastination among them.
+</p>
