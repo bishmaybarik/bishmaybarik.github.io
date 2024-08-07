@@ -16,5 +16,6 @@ Hello! I am currently pursuing a master's degree in economics at [Shiv Nadar Uni
 - Developmental Macroeconomics
 
 # Softwares Used:
-Stata | MATLAB | R | Marldown | Python | Jupyter Notebook
+Stata | MATLAB | R | Markdown | Python | Jupyter Notebook
+
 ---
