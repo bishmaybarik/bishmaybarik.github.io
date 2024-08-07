@@ -2,12 +2,8 @@
 layout: default
 ---
 
-<div class="link-container">
-    <a href="/assets/bishmay_CV_4.pdf">VITA</a>
-    <a href="/research_experience.md/">Research Experience</a>
-    <a href="/research_projects.md/">Research Projects</a>
-    <a href="/teaching.md/">Teaching</a>
-</div>
+[VITA](/assets/bishmay_CV_4.pdf) <span style="margin-right: 50px;"></span> [Research Experience](/research_experience.md/) <span style="margin-right: 50px;"></span> [Research Projects](/research_projects.md/) <span style="margin-right: 50px;"></span> [Teaching](/teaching.md/)
+
 
 # About
 
