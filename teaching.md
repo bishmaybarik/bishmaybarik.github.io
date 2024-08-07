@@ -10,8 +10,8 @@ title: Teaching
 
 - **MAT101 - Calculus I**  
   <span style="font-style: italic; color: #555;">Semester: 1</span>  
-  <span style="font-style: italic;">Instructor: Dr. Niteesh Sahni</span>
+  <span style="font-style: italic;">Instructor: [Dr. Niteesh Sahni](https://snu.edu.in/faculty/niteesh-sahni/)</span>
 
 - **ECO461 - International Economics**  
   <span style="font-style: italic; color: #555;">Semester: 2</span>  
-  <span style="font-style: italic;">Instructor: Dr. Trishita Ray Barman</span>
+  <span style="font-style: italic;">Instructor: [Dr. Trishita Ray Barman](https://snu.edu.in/faculty/trishita-ray-baraman/)</span>
