@@ -10,7 +10,7 @@ title: Teaching
 
 - **ECO302 - Intermediate Macroeconomics**  
   <span style="font-style: italic; color: #555;">Semester: 3</span>  
-  <span style="font-style: italic;">Instructor: [Dr. Trishita Ray Barman](https://snu.edu.in/faculty/trishita-ray-baraman/) & [Dr. Aditi Singh](https://www.aditi-singh.com)</span>
+  <span style="font-style: italic;">Instructor: [Dr. Aditi Singh](https://www.aditi-singh.com) & [Dr. Trishita Ray Barman](https://snu.edu.in/faculty/trishita-ray-baraman/)</span> 
 
 - **ECO461 - International Economics**  
   <span style="font-style: italic; color: #555;">Semester: 2</span>  
