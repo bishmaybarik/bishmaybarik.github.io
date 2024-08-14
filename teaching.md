@@ -9,7 +9,7 @@ title: Teaching
 **Graduate Teaching Assistant** for the following courses during my M.Sc. Economics course at Shiv Nadar University, India:
 
 - **ECO302 - Intermediate Macroeconomics**
-  <span style="font-style: italic; color: #555;">Semester: 2</span>  
+  <span style="font-style: italic; color: #555;">Semester: 3</span>  
   <span style="font-style: italic;">Instructor: [Dr. Trishita Ray Barman](https://snu.edu.in/faculty/trishita-ray-baraman/) & [Dr. Aditi Singh](https://www.aditi-singh.com)</span>
   
 - **ECO461 - International Economics**  
