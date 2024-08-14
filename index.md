@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[CV](/assets/bishmay_CV_5.pdf) <span style="margin-right: 50px;"></span> [Research Experience](/research_experience.md/) <span style="margin-right: 50px;"></span> [Research Projects](/research_projects.md/) <span style="margin-right: 50px;"></span> [Teaching](/teaching.md/)
+[CV](/assets/bishmay_CV_6.pdf) <span style="margin-right: 50px;"></span> [Research Experience](/research_experience.md/) <span style="margin-right: 50px;"></span> [Research Projects](/research_projects.md/) <span style="margin-right: 50px;"></span> [Teaching](/teaching.md/)
 
 
 # About
