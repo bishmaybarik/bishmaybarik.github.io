@@ -9,23 +9,9 @@ Here are some of the projects I’ve worked on that I’d like to showcase. Feel
 
 <div class="repositories">
     <div class="repository-card">
-        <a href="https://github.com/username/repository1" target="_blank">
-            <h3>Repository 1: Title of the Project</h3>
-            <p>A brief description of what this project entails and the technologies used.</p>
-        </a>
-    </div>
-
-    <div class="repository-card">
-        <a href="https://github.com/username/repository2" target="_blank">
-            <h3>Repository 2: Title of the Project</h3>
-            <p>A short description highlighting the focus of this project and the technologies involved.</p>
-        </a>
-    </div>
-
-    <div class="repository-card">
-        <a href="https://github.com/username/repository2" target="_blank">
-            <h3>Repository 3: Title of the Project</h3>
-            <p>A short description highlighting the focus of this project and the technologies involved.</p>
+        <a href="https://github.com/bishmaybarik/income-pyramids-clean" target="_blank">
+            <h3>Cleaned Data - Income Pyramids_dx - CMIE</h3>
+            <p>Cleaning the CMIE Income Pyramids datasets by first converting the csv files into .dta files, and then appending the datasets to create a panel dataset. </p>
         </a>
     </div>
 
