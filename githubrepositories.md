@@ -22,6 +22,13 @@ Here are some of the projects I’ve worked on that I’d like to showcase. Feel
         </a>
     </div>
 
+    <div class="repository-card">
+        <a href="https://github.com/username/repository2" target="_blank">
+            <h3>Repository 3: Title of the Project</h3>
+            <p>A short description highlighting the focus of this project and the technologies involved.</p>
+        </a>
+    </div>
+
     <!-- Add more repositories as needed -->
 </div>
 
