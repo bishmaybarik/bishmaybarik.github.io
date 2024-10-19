@@ -9,6 +9,14 @@ Here are some of the projects I’ve worked on that I’d like to showcase. Feel
 
 <div class="repositories">
     <div class="repository-card">
+        <a href="https://github.com/bishmaybarik/ginicoeff_india" target="_blank">
+            <h3> Gini Coefficients for Monthly Per Capita Consumption Expenditure - Indian Districts </h3>
+            <p>This repository contains code for calculating the Monthly Per Capita Consumption Expenditure Gini Coefficients across various districts in India, with the aim of visualizing the results through a heatmap.</p>
+        </a>
+    </div>
+    
+<div class="repositories">
+    <div class="repository-card">
         <a href="https://github.com/bishmaybarik/income-pyramids-clean" target="_blank">
             <h3>Cleaned Data - Income Pyramids_dx - CMIE</h3>
             <p>Cleaning the CMIE Income Pyramids datasets by first converting the csv files into .dta files, and then appending the datasets to create a panel dataset. </p>
