@@ -8,7 +8,7 @@ layout: default
 **Supervisor:** [Dr. Pubali Chakraborty](https://sites.google.com/view/pubali-chakraborty/home) (External) and [Dr. Partha Chatterjee](https://www.parthachatterjee.net/) (Internal) (2024, Shiv Nadar University)
 
 #  2. (Ongoing) Birth Order Effects: It’s Impact on Health Outcomes across Social Groups in India 
-**Supervisor:** [Dr. Punarjit Roychowdhury](https://punarjitroyc.weebly.com) (2024, Shiv Nadar University)
+**Supervisor:** [Dr. Gitanjali Sen](https://snu.edu.in/faculty/gitanjali-sen/) | **Co-author:** Manya Pahwa (2024, Shiv Nadar University)
 
 <p style="text-align: justify;">
 <ul>
