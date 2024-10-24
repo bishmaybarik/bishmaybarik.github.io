@@ -5,7 +5,7 @@ title: Research Experience (Website under Construction)
 ## Research Experience
 
 #  Research Assistant (2024 - Present)
-**PIs:** [Dr. Nirupama Kulkarni](https://www.nirupamakulkarni.com) & [Dr. Satyajit Chatterjee](https://sites.google.com/site/chatterjeesatyajit/home)
+**PIs:** [Dr. Nirupama Kulkarni](https://www.nirupamakulkarni.com) , [Dr. Satyajit Chatterjee](https://sites.google.com/site/chatterjeesatyajit/home) & [Dr. Ashwini Deshpande](https://www.ashoka.edu.in/profile/ashwini-deshpande/)
 
 - Analyzing emigration patterns and debt holdings across different castes, religions, and social strata using the CMIE-CPHS dataset, with a focus on state-wise and district-wise variations in India.
 - Investigating loan-taking behavior among various castes and religions, exploring the influence of cultural norms and traditions on these financial decisions.
