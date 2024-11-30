@@ -4,60 +4,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-site-verification" content="qPxbzjCZdAnbOLMhdwkEXbKlseFs9G3yios2jGACNkA" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  
-  {% seo %}
+  <title>{{ page.title | default: site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}">
-  <!--[if lt IE 9]>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <![endif]-->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
   <div class="wrapper">
+    <!-- Header Section -->
     <header>
       <div class="header-container">
-        <h1><a id="name" href="{{ '/' | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-        {% if site.logo %}
-          <img src="{{ site.logo | relative_url }}" alt="Logo" />
-        {% endif %}
-
-        <div class="social-links">
-          <a href="https://github.com/bishmaybarik" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://www.linkedin.com/in/bishmaybarik/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-          <a href="https://x.com/bishmayy" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-          <a href="mailto:bishmaykbarik@gmail.com"><i class="fas fa-envelope"></i> Mail</a>
-        </div>
+        <h1><a href="{{ '/' | absolute_url }}">{{ site.title | default: "Bishmay Barik" }}</a></h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="/assets/bishmaybarik_cv.pdf">CV</a></li>
+            <li><a href="/research_experience.md">Research Experience</a></li>
+            <li><a href="/research_projects.md">Research Projects</a></li>
+            <li><a href="/teaching.md">Teaching</a></li>
+            <li><a href="/githubrepositories.md">Public Goods</a></li>
+          </ul>
+        </nav>
         <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
           <i class="fas fa-moon"></i>
         </button>
       </div>
-
-      {% if site.show_downloads %}
-      <ul class="downloads">
-        <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-        <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-        <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-      </ul>
-      {% endif %}
     </header>
-    <section>
+
+    <!-- Main Content -->
+    <main>
       {{ content }}
-    </section>
+    </main>
+
+    <!-- Footer Section -->
     <footer>
-      {% if site.github.is_project_page %}
-      <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-      {% endif %}
       <p>© {{ site.github.owner_name }} - All Rights Reserved</p>
     </footer>
   </div>
-  <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+
   <script>
     const themeToggle = document.getElementById('theme-toggle');
     const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
