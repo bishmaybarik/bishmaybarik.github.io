@@ -6,17 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{{ page.title | default: site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}">
+
+  <!-- Fonts and Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}">
+
+  {% seo %}
 </head>
 <body>
   <div class="wrapper">
     <!-- Header Section -->
     <header>
       <div class="header-container">
-        <h1><a href="{{ '/' | absolute_url }}">{{ site.title | default: "Bishmay Barik" }}</a></h1>
+        <h1 class="site-title"><a href="{{ '/' | absolute_url }}">{{ site.title | default: "Bishmay Barik" }}</a></h1>
+        
         <nav>
           <ul class="nav-links">
             <li><a href="/assets/bishmaybarik_cv.pdf">CV</a></li>
@@ -26,23 +33,30 @@
             <li><a href="/githubrepositories.md">Public Goods</a></li>
           </ul>
         </nav>
-        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
-          <i class="fas fa-moon"></i>
+        <button id="theme-toggle" aria-label="Toggle Theme">
+          <i class="fas fa-adjust"></i>
         </button>
       </div>
     </header>
 
-    <!-- Main Content -->
+    <!-- Main Content Section -->
     <main>
       {{ content }}
     </main>
 
     <!-- Footer Section -->
     <footer>
-      <p>© {{ site.github.owner_name }} - All Rights Reserved</p>
+      <p>© {{ site.github.owner_name | default: "Bishmay Barik" }} - All Rights Reserved</p>
+      <div class="social-links">
+        <a href="https://github.com/bishmaybarik" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/bishmaybarik/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://x.com/bishmayy" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="mailto:bishmaykbarik@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
     </footer>
   </div>
 
+  <!-- Theme Toggle Script -->
   <script>
     const themeToggle = document.getElementById('theme-toggle');
     const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
