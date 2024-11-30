@@ -20,23 +20,40 @@ Here are some of the projects I’ve worked on that I’d like to showcase. The 
     }
 
     async function displayRepositories() {
+        // Mapping repository names to custom titles
         const repositories = [
-            "bishmaybarik/dist_concord_aidis_2003-13",
-            "bishmaybarik/ginicoeff_india",
-            "bishmaybarik/income-pyramids-clean",
-            "bishmaybarik/ngram-code"
+            {
+                repo: "bishmaybarik/dist_concord_aidis_2003-13",
+                title: "District Concordance Codes for AIDIS 2003 and AIDIS 2013",
+                description: "There are many new districts states created between the year 2003 and 2013 in India. However, for equivalent comparison of economic parameters, I have concorded the districts of both AIDIS 2003 and AIDIS 2013. The STATA codes for district concordance can be found in this repository."
+            },
+            {
+                repo: "bishmaybarik/ginicoeff_india",
+                title: "Gini Coefficients for Monthly Per Capita Consumption Expenditure - Indian Districts",
+                description: "This repository contains code for calculating the Monthly Per Capita Consumption Expenditure Gini Coefficients across various districts in India, with the aim of visualizing the results through a heatmap."
+            },
+            {
+                repo: "bishmaybarik/income-pyramids-clean",
+                title: "Cleaned Data - Income Pyramids_dx - CMIE",
+                description: "Cleaning the CMIE Income Pyramids datasets by first converting the CSV files into .dta files, and then appending the datasets to create a panel dataset."
+            },
+            {
+                repo: "bishmaybarik/ngram-code",
+                title: "Code for District Matching - Using N-Gram and Jaccard Similarities",
+                description: "This is a simple code for matching districts across two datasets (CSV), with associated probability of matching."
+            }
         ];
 
         const container = document.getElementById("repositories");
 
-        for (const repo of repositories) {
+        for (const { repo, title, description } of repositories) {
             const data = await fetchGitHubRepo(repo);
             if (data) {
                 container.innerHTML += `
                     <div class="repository-card">
                         <a href="${data.html_url}" target="_blank">
-                            <h3>${data.name}</h3>
-                            <p>${data.description || "No description provided."}</p>
+                            <h3>${title}</h3>
+                            <p>${description}</p>
                             <div class="repo-stats">
                                 <span>⭐ ${data.stargazers_count} Stars</span>
                                 <span>🍴 ${data.forks_count} Forks</span>
