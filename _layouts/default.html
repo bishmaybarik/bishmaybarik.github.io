@@ -9,7 +9,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -22,50 +22,55 @@
   <![endif]-->
 </head>
 <body>
-  <div class="wrapper" style="font-family: 'Merriweather', serif; line-height: 1.6; color: #333;">
-    <header style="background-color: #f8f9fa; padding: 20px; border-bottom: 1px solid #ddd;">
-      <h1 style="margin: 0; font-size: 2rem; font-weight: 700;">
-        <a id="name" href="{{ '/' | absolute_url }}" style="text-decoration: none; color: #2c3e50;">
+  <div class="wrapper" style="font-family: 'Merriweather', serif; line-height: 1.6; color: #2c3e50; background-color: #f4f4f9;">
+    <!-- Header Section -->
+    <header style="background-color: #ffffff; padding: 30px; border-bottom: 2px solid #dedede; text-align: center;">
+      <h1 style="margin: 0; font-size: 2.5rem; font-weight: 700; color: #2c3e50;">
+        <a id="name" href="{{ '/' | absolute_url }}" style="text-decoration: none; color: inherit;">
           {{ site.title | default: site.github.repository_name }}
         </a>
       </h1>
 
       {% if site.logo %}
-        <img src="{{ site.logo | relative_url }}" alt="Logo" style="max-width: 150px; margin-top: 10px;" />
+        <div style="margin-top: 20px;">
+          <img src="{{ site.logo | relative_url }}" alt="Logo" style="max-width: 250px; height: auto; border-radius: 5px; border: 1px solid #dedede;">
+        </div>
       {% endif %}
 
       <!-- Social Links -->
-      <div class="social-links" style="margin-top: 15px;">
-        <a href="https://github.com/bishmaybarik" target="_blank" style="margin-right: 15px; color: #0077b5; text-decoration: none;">
+      <div class="social-links" style="margin-top: 20px; font-size: 1.2rem;">
+        <a href="https://github.com/bishmaybarik" target="_blank" style="margin-right: 20px; color: #34495e; text-decoration: none;">
           <i class="fab fa-github"></i> GitHub
         </a>
-        <a href="https://www.linkedin.com/in/bishmaybarik/" target="_blank" style="margin-right: 15px; color: #0077b5; text-decoration: none;">
+        <a href="https://www.linkedin.com/in/bishmaybarik/" target="_blank" style="margin-right: 20px; color: #0077b5; text-decoration: none;">
           <i class="fab fa-linkedin"></i> LinkedIn
         </a>
-        <a href="https://x.com/bishmayy" target="_blank" style="margin-right: 15px; color: #0077b5; text-decoration: none;">
+        <a href="https://x.com/bishmayy" target="_blank" style="margin-right: 20px; color: #1da1f2; text-decoration: none;">
           <i class="fab fa-twitter"></i> Twitter
         </a>
-        <a href="mailto:bishmaykbarik@gmail.com" style="color: #0077b5; text-decoration: none;">
+        <a href="mailto:bishmaykbarik@gmail.com" style="color: #c0392b; text-decoration: none;">
           <i class="fas fa-envelope"></i> Mail
         </a>
       </div>
 
       {% if site.show_downloads %}
-      <ul class="downloads" style="list-style: none; padding: 0; margin-top: 20px;">
-        <li style="margin-bottom: 5px;"><a href="{{ site.github.zip_url }}" style="text-decoration: none; color: #007bff;">Download <strong>ZIP File</strong></a></li>
-        <li style="margin-bottom: 5px;"><a href="{{ site.github.tar_url }}" style="text-decoration: none; color: #007bff;">Download <strong>TAR Ball</strong></a></li>
+      <ul class="downloads" style="list-style: none; padding: 0; margin-top: 20px; display: flex; justify-content: center; gap: 15px; font-size: 1rem;">
+        <li><a href="{{ site.github.zip_url }}" style="text-decoration: none; color: #007bff;">Download <strong>ZIP File</strong></a></li>
+        <li><a href="{{ site.github.tar_url }}" style="text-decoration: none; color: #007bff;">Download <strong>TAR Ball</strong></a></li>
         <li><a href="{{ site.github.repository_url }}" style="text-decoration: none; color: #007bff;">View On <strong>GitHub</strong></a></li>
       </ul>
       {% endif %}
     </header>
 
-    <section style="padding: 30px;">
+    <!-- Content Section -->
+    <section style="padding: 40px; max-width: 800px; margin: 0 auto; background: #ffffff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
       {{ content }}
     </section>
 
-    <footer style="background-color: #f8f9fa; padding: 20px; border-top: 1px solid #ddd; text-align: center; font-size: 0.9rem;">
+    <!-- Footer Section -->
+    <footer style="background-color: #2c3e50; padding: 20px; text-align: center; color: #ffffff; font-size: 0.9rem; margin-top: 30px;">
       {% if site.github.is_project_page %}
-      <p style="margin: 0;">This project is maintained by <a href="{{ site.github.owner_url }}" style="color: #007bff;">{{ site.github.owner_name }}</a></p>
+      <p style="margin: 0;">This project is maintained by <a href="{{ site.github.owner_url }}" style="color: #f39c12; text-decoration: none;">{{ site.github.owner_name }}</a></p>
       {% endif %}
     </footer>
   </div>
