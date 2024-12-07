@@ -7,14 +7,11 @@ layout: default
 #  1. (Ongoing) Master’s Dissertation: Caste Discrimination: From a Macroeconomics Perspective 
 **Supervisor:** [Dr. Pubali Chakraborty](https://sites.google.com/view/pubali-chakraborty/home) (External) and [Dr. Partha Chatterjee](https://www.parthachatterjee.net/) (Internal) (2024, Shiv Nadar University)
 
-#  2. (Ongoing) Birth Order Effects: It’s Impact on Health Outcomes across Social Groups in India 
+#  2. Tracing Disparities: Educational Spending Before and After COVID-19 Among Social Groups in India 
 **Supervisor:** [Dr. Gitanjali Sen](https://snu.edu.in/faculty/gitanjali-sen/) | **Co-author:** Manya Pahwa (2024, Shiv Nadar University)
 
 <p style="text-align: justify;">
-<ul>
-  <li>Identifying birth order effects across different Indian households; using the India Human Development Survey</li>
-  <li>Capturing the effect of these varying birth order effects on health outcomes across members belonging to different social groups</li>
-</ul>
+<b style="color: #000000;">Abstract:</b> This paper examines the impact of COVID-19 on educational expenditure relative to household income across heterogeneous social groups in India. Using the CMIE-CPHS dataset from 2019 to 2021, we analyze variations in educational investment patterns before and after the pandemic. Employing a Triple Difference-in-Differences (DiDiD) approach, we explore pre- and post-pandemic trends, uncovering a significant decline in educational expenditure across all religious groups. Among caste categories, the expected decline is however not seen. We discuss potential factors driving these results, including school closures, reduced teacher participation, widespread job losses, and heightened financial constraints on households. This study underscores the disproportionate impact of the pandemic on educational access for marginalized communities.
 </p>
 
 #  3. Does Overconfidence Lead to Procrastination?: A Cognitive Reflection Test Experiment
