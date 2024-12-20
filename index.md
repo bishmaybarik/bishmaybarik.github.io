@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[CV](/assets/new_CV.pdf) <span style="margin-right: 50px;"></span> [Research Experience](/links/research_experience.md/) <span style="margin-right: 50px;"></span> [Research Projects](/links/research_projects.md/) <span style="margin-right: 50px;"></span> [Teaching](/links/teaching.md/)<span style="margin-right: 50px;"></span> [Public Goods](/links/githubrepositories.md/)
+[CV](/assets/bishmay_CV.pdf) <span style="margin-right: 50px;"></span> [Research Experience](/links/research_experience.md/) <span style="margin-right: 50px;"></span> [Research Projects](/links/research_projects.md/) <span style="margin-right: 50px;"></span> [Teaching](/links/teaching.md/)<span style="margin-right: 50px;"></span> [Public Goods](/links/githubrepositories.md/)
 
 
 # About
