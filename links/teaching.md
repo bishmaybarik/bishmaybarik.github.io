@@ -8,7 +8,7 @@ title: Teaching
 ### Shiv Nadar University
 **Graduate Teaching Assistant** for the following courses during my M.Sc. Economics course at Shiv Nadar University, India:
 
-- **ECO302 - Macroeconomics II (Graduate Level Course)**  
+- **ECO512 - Macroeconomics II (Graduate Level Course)**  
   <span style="font-style: italic; color: #555;">Semester: 4</span>  
   <span style="font-style: italic;">Instructor: [Dr. Kurt Horner](https://snu.edu.in/faculty/kurt-horner/) & [Dr. Trishita Ray Barman](https://snu.edu.in/faculty/trishita-ray-baraman/)</span> 
 
