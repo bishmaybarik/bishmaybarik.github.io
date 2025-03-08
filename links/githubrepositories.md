@@ -23,6 +23,11 @@ Here are some of the projects I’ve worked on that I’d like to showcase. The 
         // Mapping repository names to custom titles
         const repositories = [
             {
+                repo: "bishmaybarik/lipi-swap",
+                title: "lipi-swap: Transliteration Code for Devanagari to English",
+                description: "This Python script converts Devanagari script into Roman English for easier use. It is especially helpful when scraping Indian data, such as names or places. The Unidecode library has been used for this purpose."
+            },
+            {
                 repo: "bishmaybarik/dist_concord_aidis_2003-13",
                 title: "District Concordance Codes for AIDIS 2003 and AIDIS 2013",
                 description: "There are many new districts states created between the year 2003 and 2013 in India. However, for equivalent comparison of economic parameters, I have concorded the districts of both AIDIS 2003 and AIDIS 2013. The STATA codes for district concordance can be found in this repository."
