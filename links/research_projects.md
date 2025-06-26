@@ -5,7 +5,7 @@ layout: default
 ## Research Projects
 
 ## Master's Dissertation (M.Sc. Economics, Shiv Nadar University, India)
-# **1. Title:** Caste in Stone? Cultural Distance and the Education Game
+# **1.** Caste in Stone? Cultural Distance and the Education Game
 **Supervisors:** [Dr. Pubali Chakraborty](https://sites.google.com/view/pubali-chakraborty/home) & [Dr. Partha Chatterjee](https://www.parthachatterjee.net/)
 
 <p style="text-align: justify;">
