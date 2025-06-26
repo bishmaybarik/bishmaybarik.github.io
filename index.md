@@ -7,16 +7,19 @@ layout: default
 
 # About
 
-Hey people, I'm Bishmay. I have completed my Master's in Economics from Shiv Nadar University, India, and will be joining the Centre for Advanced Financial Research and Learning (CAFRAL), Reserve Bank of India, as a Research Associate starting mid-July. Currently, I work as a part-time Research Assistant at [QuantEcon](https://quantecon.org/) and as a Data Science Intern at [Development Data Lab](https://www.devdatalab.org/). 
+Hey people, I'm Bishmay. I have completed my Master's in Economics from Shiv Nadar University, India, and will be joining the Centre for Advanced Financial Research and Learning (CAFRAL), Reserve Bank of India, as a Research Associate starting mid-July. Currently, I work as a part-time Research Assistant at [QuantEcon](https://quantecon.org/) and as a Data Science Intern at [Development Data Lab](https://www.devdatalab.org/).
 
-My interests lie primarily in macroeconomic theory, computational macroeconomics, and exploring the use of AI, LLMs, and neural networks in Economics.
+My interests lie primarily in macroeconomic theory, computational macroeconomics, and exploring the use of AI, LLMs, and neural networks in Economics. I primarily work with Python and Stata, and I have experience in both applied empirical and development-focused projects in India, as well as theoretical work in various economic domains. 
 
-I primarily work with Python and Stata, and I have experience in both applied empirical and development-focused projects in India, as well as theoretical work in various economic domains.
+I'm open to opportunities and happy to collaborate on projects. Please feel free to reach out to me at [bishmaykbarik@gmail.com](mailto:bishmaykbarik@gmail.com).
 
-I'm open to opportunities and happy to collaborate on projects. Please feel free to reach out to me at [bishmaykbarik@gmail.com](mailto:bishmaykbarik@gmail.com). To explore more about my interests, research experience, or projects, check out my webpage [here](https://bishmaybarik.github.io/).
 
-# Softwares Used:
-Python | Stata | MATLAB | Jupyter Notebooks | Streamlit
+### Softwares Used:
+Python | Stata | MATLAB | Jupyter Notebooks | | Git | GitHub | Terminal | Streamlit 
+
+### Languages (Programming, Typesetting and Markup)
+
+Python | Bash | TeX | Markdown 
 
 Additionally, some of the binary code formats I’ve been working with recently include WebAssembly (WASM) and Pyodide. I’ve also worked with PyTorch and TensorFlow. Currently, I’m intrigued by JAX and its applications in economic research — particularly in optimization problems in economics and improving computational speeds of various libraries in Python.
 
