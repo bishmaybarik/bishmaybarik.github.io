@@ -15,11 +15,11 @@ I'm open to opportunities and happy to collaborate on projects. Please feel free
 
 
 ### Softwares Used:
-Python | Stata | MATLAB | Jupyter Notebooks | | Git | GitHub | Terminal | Streamlit 
+Python | Stata | MATLAB | Git | GitHub | Terminal | Streamlit 
 
 ### Languages (Programming, Typesetting and Markup)
 
-Python | Bash | TeX | Markdown 
+Python , Bash , TeX , Markdown 
 
 Additionally, some of the binary code formats I’ve been working with recently include WebAssembly (WASM) and Pyodide. I’ve also worked with PyTorch and TensorFlow. Currently, I’m intrigued by JAX and its applications in economic research — particularly in optimization problems in economics and improving computational speeds of various libraries in Python.
 
