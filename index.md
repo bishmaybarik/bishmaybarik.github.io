@@ -7,15 +7,18 @@ layout: default
 
 # About
 
-Hello! I am currently pursuing a master's degree in economics at [Shiv Nadar University](https://snu.edu.in/home/), with a focus on research. My primary interest lies in macroeconomics and economic growth, and I aspire to further my academic journey by pursuing a PhD. I am learning and growing my skills in [Stata](https://www.stata.com) and [MATLAB](https://in.mathworks.com/company.html), frequently working with data and coding. My goal is to contribute to academia and achieve publications in the field. When I am not engaged in academic pursuits, I enjoy clicking pictures, exploring my surroundings, and contemplating the next big economic breakthrough.
+Hey people, I'm Bishmay. I have completed my Master's in Economics from Shiv Nadar University, India, and will be joining the Centre for Advanced Financial Research and Learning (CAFRAL), Reserve Bank of India, as a Research Associate starting mid-July. Currently, I work as a part-time Research Assistant at [QuantEcon](https://quantecon.org/) and as a Data Science Intern at [Development Data Lab](https://www.devdatalab.org/). 
 
-# Primary Research Interests
+My interests lie primarily in macroeconomic theory, computational macroeconomics, and exploring the use of AI, LLMs, and neural networks in Economics.
 
-- Macroeconomic Theory
-- Growth Theory
-- Developmental Macroeconomics
+I primarily work with Python and Stata, and I have experience in both applied empirical and development-focused projects in India, as well as theoretical work in various economic domains.
+
+I'm open to opportunities and happy to collaborate on projects. Please feel free to reach out to me at [bishmaykbarik@gmail.com](mailto:bishmaykbarik@gmail.com). To explore more about my interests, research experience, or projects, check out my webpage [here](https://bishmaybarik.github.io/).
 
 # Softwares Used:
-Stata | MATLAB | R | Markdown | Python | Jupyter Notebook | Dynare
+Python | Stata | MATLAB | Jupyter Notebooks | Streamlit
+
+Additionally, some of the binary code formats I’ve been working with recently include WebAssembly (WASM) and Pyodide. I’ve also worked with PyTorch and TensorFlow. Currently, I’m intrigued by JAX and its applications in economic research — particularly in optimization problems in economics and improving computational speeds of various libraries in Python.
+
 
 ---
