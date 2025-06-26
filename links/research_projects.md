@@ -9,19 +9,7 @@ layout: default
 **Supervisors:** [Dr. Pubali Chakraborty](https://sites.google.com/view/pubali-chakraborty/home) & [Dr. Partha Chatterjee](https://www.parthachatterjee.net/)
 
 <p style="text-align: justify;">
-<b style="color: #000000;">Abstract:</b> This paper studies the disparities in human capital attainment and income distributions
-between disadvantaged minority groups and non-minority groups in India, and estimates
-the extent to which these gaps can be explained by cultural distance. We develop a three-
-period macroeconomic model to project human capital and income distributions for the
-next generation, based on observed parental distributions. Cultural distances between
-social groups are measured using total variation in cultural norms, drawing on data from
-the Notions of Identity Module 2.1 of the Samaj Survey Project. Human capital and in-
-come data are sourced from the Consumer Pyramids Household Survey. Our findings
-reveal persistent gaps in both human capital and income between the non-minorities and
-the disadvantaged minorities which includes Scheduled Castes, Scheduled Tribes, and
-Muslims. We estimate that approximately 22.15% of the gap in human capital attain-
-ment can be attributed to cultural distance, whereas cultural distance accounts for only
-about 7.7% of the income gap of next generations.
+<b style="color: #000000;">Abstract:</b> This paper studies the disparities in human capital attainment and income distributions between disadvantaged minority groups and non-minority groups in India, and estimates the extent to which these gaps can be explained by cultural distance. We develop a three-period macroeconomic model to project human capital and income distributions for the next generation, based on observed parental distributions. Cultural distances between social groups are measured using total variation in cultural norms, drawing on data from the Notions of Identity Module 2.1 of the Samaj Survey Project. Human capital and income data are sourced from the Consumer Pyramids Household Survey. Our findings reveal persistent gaps in both human capital and income between the non-minorities and the disadvantaged minorities which includes Scheduled Castes, Scheduled Tribes, and Muslims. We estimate that approximately 22.15% of the gap in human capital attainment can be attributed to cultural distance, whereas cultural distance accounts for only about 7.7% of the income gap of next generations.
 </p>
 
 #  2. Shedding Light on Consumption: Assessing Night-Time Luminosity as a Predictor of Consumption Expenditure in India 
