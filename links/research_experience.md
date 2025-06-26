@@ -11,7 +11,7 @@ title: Research Experience
 
 - Design and develop an open, accessible undergraduate economics course using Pyodide and WebAssembly for real-time simulation and code execution, teaching scientific computing to tackle issues like inequality, resource scarcity, and climate change. 
 
-# 2. Research Intern (2025 - Present)  
+# 2. Data Science Intern (2025 - Present)  
 **PIs:** [Dr. Paul Novosad](https://paulnovosad.com/)
 
 **Organisation:** [Development Data Lab](https://www.devdatalab.org/)
