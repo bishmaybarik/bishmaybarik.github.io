@@ -7,7 +7,7 @@ layout: default
 
 # About
 
-Hey people, I'm Bishmay. I have completed my Master's in Economics from Shiv Nadar University, India, and will be joining the Centre for Advanced Financial Research and Learning (CAFRAL), Reserve Bank of India, as a Research Associate starting mid-July. Currently, I work as a part-time Research Assistant at [QuantEcon](https://quantecon.org/) and as a Data Science Intern at [Development Data Lab](https://www.devdatalab.org/).
+Hey people, I'm Bishmay. I am a Research Associate at the Centre for Advanced Financial Research and Learning (CAFRAL), Reserve Bank of India. In the past, I’ve worked as a part-time Research Assistant at [QuantEcon](https://quantecon.org/) and as a Data Science Intern at [Development Data Lab](https://www.devdatalab.org/). I hold a Master’s degree in Economics from Shiv Nadar University, India.
 
 My interests lie primarily in macroeconomic theory, computational macroeconomics, and exploring the use of AI, LLMs, and neural networks in Economics. I primarily work with Python and Stata, and I have experience in both applied empirical and development-focused projects in India, as well as theoretical work in various economic domains. 
 
