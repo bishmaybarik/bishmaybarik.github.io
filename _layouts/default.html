@@ -10,12 +10,8 @@
 </head>
 <body>
   <div class="container">
-    <aside class="sidebar">
-      <div class="profile">
-        <img src="{{ site.logo | relative_url }}" alt="{{ site.title }}" class="avatar">
-        <h1><a href="/">{{ site.title }}</a></h1>
-      </div>
-
+    <header>
+      <h1><a href="/">{{ site.title }}</a></h1>
       <nav>
         <a href="/assets/bishmay_CV.pdf" target="_blank">cv</a>
         <a href="/links/research_experience.md/">research experience</a>
@@ -23,18 +19,18 @@
         <a href="/links/teaching.md/">teaching</a>
         <a href="/links/githubrepositories.md/">public goods</a>
       </nav>
+    </header>
 
-      <div class="links">
-        <a href="https://github.com/bishmaybarik" target="_blank">github</a>
-        <a href="https://www.linkedin.com/in/bishmaybarik/" target="_blank">linkedin</a>
-        <a href="https://x.com/bishmayy" target="_blank">twitter</a>
-        <a href="mailto:bishmaykbarik@gmail.com">email</a>
-      </div>
-    </aside>
-
-    <main class="main">
+    <main>
       {{ content }}
     </main>
+
+    <footer>
+      <a href="https://github.com/bishmaybarik" target="_blank">github</a> ·
+      <a href="https://www.linkedin.com/in/bishmaybarik/" target="_blank">linkedin</a> ·
+      <a href="https://x.com/bishmayy" target="_blank">twitter</a> ·
+      <a href="mailto:bishmaykbarik@gmail.com">email</a>
+    </footer>
   </div>
 
   {% if site.google_analytics %}

@@ -2,9 +2,6 @@
 layout: default
 ---
 
-[CV](/assets/bishmay_CV.pdf) <span style="margin-right: 50px;"></span> [Research Experience](/links/research_experience.md/) <span style="margin-right: 50px;"></span> [Research Projects](/links/research_projects.md/) <span style="margin-right: 50px;"></span> [Teaching](/links/teaching.md/)<span style="margin-right: 50px;"></span> [Public Goods](/links/githubrepositories.md/)
-
-
 # About
 
 Hey people, I'm Bishmay. I am a Research Associate at the Centre for Advanced Financial Research and Learning (CAFRAL), Reserve Bank of India. In the past, I’ve worked as a part-time Research Assistant at [QuantEcon](https://quantecon.org/) and as a Data Science Intern at [Development Data Lab](https://www.devdatalab.org/). I hold a Master’s degree in Economics from Shiv Nadar University, India.
