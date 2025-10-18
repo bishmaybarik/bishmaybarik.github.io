@@ -8,10 +8,11 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}">
+
   {% seo %}
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   <!--[if lt IE 9]>
@@ -19,38 +20,126 @@
   <![endif]-->
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <h1><a id="name" href="{{ '/' | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-                    
-      {% if site.logo %}
-        <img src="{{ site.logo | relative_url }}" alt="Logo" />
-      {% endif %}
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="terminal-loader">
+      <span class="prompt">root@bishmay:~$</span>
+      <span class="loading-text"> initializing...</span>
+      <div class="loading-dots">
+        <span>.</span><span>.</span><span>.</span>
+      </div>
+    </div>
+  </div>
 
-      <div class="social-links">
-        <a href="https://github.com/bishmaybarik" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://www.linkedin.com/in/bishmaybarik/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://x.com/bishmayy" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-        <a href="mailto:bishmaykbarik@gmail.com"><i class="fas fa-envelope"></i> Mail</a>
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile-section">
+        <div class="ascii-border-top">╔══════════════════╗</div>
+        {% if site.logo %}
+          <div class="profile-img-container">
+            <img src="{{ site.logo | relative_url }}" alt="Profile" class="profile-img" />
+          </div>
+        {% endif %}
+        <div class="name-container">
+          <div class="terminal-prompt">&gt;_</div>
+          <h1 class="profile-name">
+            <a href="{{ '/' | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a>
+          </h1>
+        </div>
+        <div class="ascii-border-bottom">╚══════════════════╝</div>
       </div>
 
-      {% if site.show_downloads %}
-      <ul class="downloads">
-        <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-        <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-        <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-      </ul>
-      {% endif %}
-    </header>
-    <section>
-      {{ content }}
-    </section>
-    <footer>
-      {% if site.github.is_project_page %}
-      <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-      {% endif %}
-    </footer>
+      <nav class="nav-section">
+        <div class="nav-title">
+          <span class="bracket">[</span> NAVIGATION <span class="bracket">]</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/assets/bishmay_CV.pdf" target="_blank"><span class="nav-icon">$</span> cv.pdf</a></li>
+          <li><a href="/links/research_experience.md/"><span class="nav-icon">$</span> research_exp/</a></li>
+          <li><a href="/links/research_projects.md/"><span class="nav-icon">$</span> projects/</a></li>
+          <li><a href="/links/teaching.md/"><span class="nav-icon">$</span> teaching/</a></li>
+          <li><a href="/links/githubrepositories.md/"><span class="nav-icon">$</span> public_goods/</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-section">
+        <div class="social-title">
+          <span class="bracket">[</span> CONNECT <span class="bracket">]</span>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/bishmaybarik" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/bishmaybarik/" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://x.com/bishmayy" target="_blank" class="social-link">
+            <i class="fab fa-twitter"></i>
+            <span>Twitter</span>
+          </a>
+          <a href="mailto:bishmaykbarik@gmail.com" class="social-link">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="status-bar">
+        <span class="status-item">
+          <i class="fas fa-circle status-online"></i> online
+        </span>
+        <span class="status-item">
+          <i class="fas fa-terminal"></i> v1.0.0
+        </span>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content-section">
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-buttons">
+            <span class="btn-close"></span>
+            <span class="btn-minimize"></span>
+            <span class="btn-maximize"></span>
+          </div>
+          <div class="terminal-title">bishmay@terminal: ~/portfolio</div>
+        </div>
+        <div class="terminal-body">
+          {{ content }}
+        </div>
+      </div>
+    </main>
   </div>
+
+  <script>
+    // Loading screen animation
+    window.addEventListener('load', function() {
+      const loadingScreen = document.getElementById('loading-screen');
+      setTimeout(function() {
+        loadingScreen.style.opacity = '0';
+        setTimeout(function() {
+          loadingScreen.style.display = 'none';
+        }, 500);
+      }, 1500);
+    });
+
+    // Typing effect for content
+    document.addEventListener('DOMContentLoaded', function() {
+      const terminalBody = document.querySelector('.terminal-body');
+      if (terminalBody) {
+        terminalBody.style.opacity = '0';
+        setTimeout(function() {
+          terminalBody.style.animation = 'fadeInUp 0.8s ease forwards';
+        }, 1600);
+      }
+    });
+  </script>
+
   <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
   {% if site.google_analytics %}
   <script>
