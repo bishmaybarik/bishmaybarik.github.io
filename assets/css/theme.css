@@ -4,23 +4,92 @@
   box-sizing: border-box;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 5px rgba(255, 212, 59, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(255, 212, 59, 0.8), 0 0 15px rgba(255, 212, 59, 0.6);
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 body {
   font-family: Menlo, Monaco, 'Courier New', monospace;
   font-size: 12px;
   line-height: 1.7;
   color: #d0d0d0;
-  background: #000000;
+  background: linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #000000 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
   -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 255, 0, 0.03) 0px,
+      transparent 1px,
+      transparent 2px,
+      rgba(0, 255, 0, 0.03) 3px
+    );
+  pointer-events: none;
+  z-index: 1;
 }
 
 .container {
   max-width: 580px;
   margin: 0 auto;
   padding: 60px 30px;
+  position: relative;
+  z-index: 2;
+  animation: fadeIn 0.8s ease-out;
 }
 
 header {
   margin-bottom: 50px;
+  position: relative;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, #00ff00, transparent);
+  animation: fadeIn 1s ease-out 0.3s backwards;
 }
 
 header h1 {
@@ -29,16 +98,26 @@ header h1 {
   margin-bottom: 20px;
   color: #ffffff;
   letter-spacing: 0.3px;
+  position: relative;
+  display: inline-block;
+}
+
+header h1::before {
+  content: '> ';
+  color: #00ff00;
+  animation: glow 2s ease-in-out infinite;
 }
 
 header h1 a {
   color: inherit;
   text-decoration: none;
-  transition: opacity 0.2s;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 header h1 a:hover {
-  opacity: 0.8;
+  color: #00ff00;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
 }
 
 nav {
@@ -51,11 +130,34 @@ nav {
 nav a {
   color: #ffd43b;
   text-decoration: none;
-  transition: opacity 0.2s;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 2px 0;
+  border: 1px solid transparent;
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+
+nav a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #ffd43b;
+  transition: width 0.3s ease;
 }
 
 nav a:hover {
-  opacity: 0.7;
+  background: rgba(255, 212, 59, 0.1);
+  border-color: rgba(255, 212, 59, 0.3);
+  box-shadow: 0 0 10px rgba(255, 212, 59, 0.2);
+  transform: translateY(-1px);
+}
+
+nav a:hover::before {
+  width: 100%;
 }
 
 main {
@@ -68,6 +170,22 @@ main h1 {
   margin: 35px 0 15px 0;
   color: #3776ab;
   letter-spacing: 0.3px;
+  position: relative;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+}
+
+main h1::before {
+  content: '# ';
+  position: absolute;
+  left: 0;
+  color: #00ff00;
+  opacity: 0.7;
+}
+
+main h1:hover {
+  color: #5a9fd4;
+  transform: translateX(3px);
 }
 
 main h1:first-child {
@@ -79,6 +197,22 @@ main h2 {
   font-weight: 500;
   margin: 30px 0 12px 0;
   color: #3776ab;
+  position: relative;
+  padding-left: 18px;
+  transition: all 0.3s ease;
+}
+
+main h2::before {
+  content: '## ';
+  position: absolute;
+  left: 0;
+  color: #00ff00;
+  opacity: 0.6;
+}
+
+main h2:hover {
+  color: #5a9fd4;
+  transform: translateX(3px);
 }
 
 main h3 {
@@ -86,6 +220,22 @@ main h3 {
   font-weight: 500;
   margin: 25px 0 10px 0;
   color: #5a8fc2;
+  position: relative;
+  padding-left: 21px;
+  transition: all 0.3s ease;
+}
+
+main h3::before {
+  content: '### ';
+  position: absolute;
+  left: 0;
+  color: #00ff00;
+  opacity: 0.5;
+}
+
+main h3:hover {
+  color: #7bb3e0;
+  transform: translateX(3px);
 }
 
 main p {
@@ -97,12 +247,30 @@ main a {
   color: #ffd43b;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 212, 59, 0.3);
-  transition: border-color 0.2s, opacity 0.2s;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 main a:hover {
-  opacity: 0.8;
+  color: #ffe066;
   border-bottom-color: #ffd43b;
+  text-shadow: 0 0 8px rgba(255, 212, 59, 0.4);
+}
+
+main a::after {
+  content: ' ↗';
+  font-size: 0.8em;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+main a[href^="http"]::after,
+main a[href^="https://"]::after {
+  opacity: 0.5;
+}
+
+main a:hover::after {
+  opacity: 1;
 }
 
 main hr {
@@ -125,6 +293,15 @@ main code {
   font-size: 11px;
   color: #ffd43b;
   border: 1px solid #333;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+main code:hover {
+  background: #222;
+  border-color: #ffd43b;
+  box-shadow: 0 0 8px rgba(255, 212, 59, 0.3);
+  transform: scale(1.02);
 }
 
 main ul,
@@ -149,16 +326,33 @@ footer {
   text-align: center;
   font-size: 11px;
   color: #666;
+  position: relative;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #00ff00, transparent);
+  animation: fadeIn 1.5s ease-out;
 }
 
 footer a {
   color: #ffd43b;
   text-decoration: none;
-  transition: opacity 0.2s;
+  transition: all 0.3s ease;
+  padding: 0 3px;
+  border-radius: 2px;
 }
 
 footer a:hover {
-  opacity: 0.7;
+  color: #00ff00;
+  background: rgba(0, 255, 0, 0.1);
+  text-shadow: 0 0 8px rgba(0, 255, 0, 0.5);
 }
 
 @media (max-width: 640px) {
@@ -170,8 +364,29 @@ footer a:hover {
     margin-bottom: 40px;
   }
 
+  header::after {
+    width: 40px;
+  }
+
   main {
     margin-bottom: 50px;
+  }
+
+  nav {
+    gap: 5px 10px;
+  }
+
+  nav a {
+    padding: 2px 6px;
+  }
+
+  /* Reduce animations on mobile for performance */
+  body::before {
+    opacity: 0.5;
+  }
+
+  body::after {
+    display: none; /* Disable scanline on mobile */
   }
 }
 
@@ -194,4 +409,78 @@ footer a:hover {
 ::selection {
   background: #3776ab;
   color: #ffffff;
+}
+
+::-moz-selection {
+  background: #3776ab;
+  color: #ffffff;
+}
+
+/* Performance optimizations */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Prefers reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Loading animation for images */
+img {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Add focus styles for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #00ff00;
+  outline-offset: 2px;
+}
+
+/* Cool list item animation */
+main li {
+  position: relative;
+  padding-left: 5px;
+  transition: transform 0.2s ease;
+}
+
+main li:hover {
+  transform: translateX(3px);
+}
+
+main li::marker {
+  color: #ffd43b;
+}
+
+/* Enhanced blockquote styling */
+main blockquote {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+main blockquote::before {
+  content: '"';
+  position: absolute;
+  left: -10px;
+  top: -5px;
+  font-size: 30px;
+  color: #00ff00;
+  opacity: 0.3;
+}
+
+main blockquote:hover {
+  border-left-color: #00ff00;
+  padding-left: 25px;
+}
+
+/* Add subtle text shadow for better readability */
+main p {
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
