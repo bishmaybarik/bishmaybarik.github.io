@@ -6,8 +6,8 @@
 
 body {
   font-family: Menlo, Monaco, 'Courier New', monospace;
-  font-size: 12px;
-  line-height: 1.7;
+  font-size: 14px;
+  line-height: 1.75;
   color: #d0d0d0;
   background: #000000;
   -webkit-font-smoothing: antialiased;
@@ -24,7 +24,7 @@ header {
 }
 
 header h1 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
   color: #ffffff;
@@ -45,7 +45,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   gap: 5px 15px;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 nav a {
@@ -63,7 +63,7 @@ main {
 }
 
 main h1 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   margin: 35px 0 15px 0;
   color: #3776ab;
@@ -75,14 +75,14 @@ main h1:first-child {
 }
 
 main h2 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   margin: 30px 0 12px 0;
   color: #3776ab;
 }
 
 main h3 {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   margin: 25px 0 10px 0;
   color: #5a8fc2;
@@ -147,7 +147,7 @@ footer {
   padding-top: 30px;
   border-top: 1px solid #333;
   text-align: center;
-  font-size: 11px;
+  font-size: 12px;
   color: #666;
 }
 

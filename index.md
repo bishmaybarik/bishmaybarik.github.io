@@ -4,21 +4,16 @@ layout: default
 
 # About
 
-Hey people, I'm Bishmay. I am a Research Associate at the Centre for Advanced Financial Research and Learning (CAFRAL), Reserve Bank of India. In the past, I’ve worked as a part-time Research Assistant at [QuantEcon](https://quantecon.org/) and as a Data Science Intern at [Development Data Lab](https://www.devdatalab.org/). I hold a Master’s degree in Economics from Shiv Nadar University, India.
+Hey, I'm Bishmay. I am a Research Associate at the [Centre for Advanced Financial Research and Learning (CAFRAL)](https://www.cafral.org.in/), Reserve Bank of India. I hold a Master's degree in Economics from Shiv Nadar University (Dean's List, 2025) and a Bachelor's in Economics from XIM University, Bhubaneswar.
 
-My interests lie primarily in macroeconomic theory, computational macroeconomics, and exploring the use of AI, LLMs, and neural networks in Economics. I primarily work with Python and Stata, and I have experience in both applied empirical and development-focused projects in India, as well as theoretical work in various economic domains. 
+My research interests span development economics, political economy, and macroeconomics — with a focus on using empirical and computational methods to answer questions about inequality, caste, and public policy in India. I work extensively with data scraping and text analysis to complement traditional econometric approaches. I work primarily with Python and Stata. Previously, I've been a Research Assistant at [QuantEcon](https://quantecon.org/) and a Data Science Intern at [Development Data Lab](https://www.devdatalab.org/).
 
-I'm open to opportunities and happy to collaborate on projects. Please feel free to reach out to me at [bishmaykbarik@gmail.com](mailto:bishmaykbarik@gmail.com).
+I'm open to opportunities and happy to collaborate. Feel free to reach out at [bishmaykbarik@gmail.com](mailto:bishmaykbarik@gmail.com).
 
+### Software and Tools
 
-### Softwares Used:
-Python | Stata | MATLAB | Git | GitHub | Terminal | Streamlit 
+Python | Stata | LaTeX | Markdown | Jupyter | Git/GitHub | Bash | GNU Make
 
-### Languages (Programming, Typesetting and Markup)
-
-Python , Bash , TeX , Markdown 
-
-Additionally, some of the binary code formats I’ve been working with recently include WebAssembly (WASM) and Pyodide. I’ve also worked with PyTorch and TensorFlow. Currently, I’m intrigued by JAX and its applications in economic research — particularly in optimization problems in economics and improving computational speeds of various libraries in Python.
-
+Currently fascinated by zero-shot classification and NLP pipelines (particularly [BART-large-MNLI](https://huggingface.co/facebook/bart-large-mnli)) for text analysis in empirical research. I also work with JAX and TensorFlow for computational economics.
 
 ---

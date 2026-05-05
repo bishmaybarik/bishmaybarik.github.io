@@ -24,8 +24,13 @@ Here are some of the projects I’ve worked on that I’d like to showcase. The 
         const repositories = [
             {
                 repo: "bishmaybarik/lipi-swap",
-                title: "lipi-swap: Transliteration Code for Devanagari to English",
-                description: "This Python script converts Devanagari script into Roman English for easier use. It is especially helpful when scraping Indian data, such as names or places. The Unidecode library has been used for this purpose."
+                title: "lipi-swap: Devanagari to Roman Transliteration Utility",
+                description: "Python utility for converting Devanagari script (Hindi) into Roman English characters. Integrates transliteration into web scraping workflows for hierarchical Indian administrative data (states, districts, blocks, panchayats), eliminating encoding issues in CSV exports."
+            },
+            {
+                repo: "bishmaybarik/jati-distribution",
+                title: "State-wise Jati Distributions Dashboard",
+                description: "Interactive Streamlit dashboard visualizing caste (jati) distribution across India using CMIE-CPHS (2014-2024). Direct cloud integration with AWS S3 via DuckDB, dynamic filters by state/district/year/month. Built with Python, Streamlit, and Apache Parquet."
             },
             {
                 repo: "bishmaybarik/dist_concord_aidis_2003-13",
