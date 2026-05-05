@@ -12,7 +12,7 @@ I'm open to opportunities and happy to collaborate. Feel free to reach out at [b
 
 ### Software and Tools
 
-Python | Stata | LaTeX | Markdown | Jupyter | Git/GitHub | Bash | GNU Make
+Python, Stata, LaTeX, Markdown, Jupyter, Git/GitHub, Bash, GNU Make
 
 Currently fascinated by zero-shot classification and NLP pipelines (particularly [BART-large-MNLI](https://huggingface.co/facebook/bart-large-mnli)) for text analysis in empirical research. I also work with JAX and TensorFlow for computational economics.
 
