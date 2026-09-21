@@ -195,3 +195,46 @@ footer a:hover {
   background: #3776ab;
   color: #ffffff;
 }
+
+/* Terminal windows on /ai_usage/ */
+.term {
+  margin: 25px 0;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #0d0d0d;
+  overflow: hidden;
+}
+
+.term-bar {
+  display: flex;
+  gap: 6px;
+  padding: 8px 10px;
+  border-bottom: 1px solid #222;
+  background: #151515;
+}
+
+.term-bar span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #333;
+}
+
+.term pre {
+  margin: 0;
+  padding: 14px 16px;
+  font-family: inherit;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #d0d0d0;
+  overflow-x: auto;
+}
+
+.term .prompt {
+  color: #ffd43b;
+}
+
+.term-note {
+  font-size: 11px;
+  color: #666;
+}
