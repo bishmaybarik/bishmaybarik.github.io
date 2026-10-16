@@ -23,11 +23,13 @@ from pathlib import Path
 HOME = Path.home()
 CLAUDE_STATS = HOME / ".claude" / "stats-cache.json"
 CODEX_SESSIONS = HOME / ".codex" / "sessions"
+CLAUDE_PROJECTS = HOME / ".claude" / "projects"
 REPO = Path(__file__).resolve().parent.parent
 OUT = REPO / "_includes" / "ai_usage_terminal.html"
 
 BAR_WIDTH = 20
 HEATMAP_WEEKS = 26
+RECENT_DAYS = 30
 
 
 # ---------------------------------------------------------------------------
@@ -132,6 +134,40 @@ def claude_summary():
         for m, u in s["modelUsage"].items()
     }
     model_output = {m: u["outputTokens"] for m, u in s["modelUsage"].items()}
+    model_tokens, model_output = Counter(model_tokens), Counter(model_output)
+
+    # stats-cache.json is only refreshed now and then; top it up from the raw
+    # session logs for anything after its lastComputedDate, and collect the
+    # last RECENT_DAYS of usage for the "recent favorite" line.
+    as_of = date.fromisoformat(s["lastComputedDate"])
+    cutoff = date.today() - timedelta(days=RECENT_DAYS)
+    recent = Counter()
+    seen = set()
+    for path in CLAUDE_PROJECTS.glob("*/*.jsonl"):
+        for line in path.open():
+            try:
+                ev = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            msg = ev.get("message")
+            ts = ev.get("timestamp")
+            if not isinstance(msg, dict) or "usage" not in msg or not ts:
+                continue
+            model = msg.get("model", "")
+            key = (msg.get("id"), ev.get("requestId"))
+            if not model.startswith("claude-") or key in seen:
+                continue
+            seen.add(key)
+            u = msg["usage"]
+            tokens = sum(u.get(k) or 0 for k in (
+                "input_tokens", "output_tokens",
+                "cache_read_input_tokens", "cache_creation_input_tokens"))
+            day = datetime.fromisoformat(ts.replace("Z", "+00:00")).astimezone().date()
+            if day > as_of:
+                model_tokens[model] += tokens
+                model_output[model] += u.get("output_tokens") or 0
+            if day >= cutoff:
+                recent[model] += tokens
 
     activity = {date.fromisoformat(d["date"]): d["messageCount"] for d in s["dailyActivity"]}
     hours = {int(h): c for h, c in s["hourCounts"].items()}
@@ -140,6 +176,7 @@ def claude_summary():
     return {
         "model_tokens": model_tokens,
         "model_output": model_output,
+        "recent_tokens": recent,
         "sessions": s["totalSessions"],
         "messages": s["totalMessages"],
         "tool_calls": sum(d.get("toolCallCount", 0) for d in s["dailyActivity"]),
@@ -159,6 +196,8 @@ def claude_summary():
 def codex_summary():
     model_tokens = Counter()
     model_output = Counter()
+    recent = Counter()               # tokens per model, last RECENT_DAYS
+    cutoff = date.today() - timedelta(days=RECENT_DAYS)
     activity = Counter()             # turns per local day
     hours = Counter()                # sessions started per local hour
     sessions = 0
@@ -200,12 +239,15 @@ def codex_summary():
                 if delta > 0 and model:
                     model_tokens[model] += delta
                     model_output[model] += max(delta_out, 0)
+                    if local and local.date() >= cutoff:
+                        recent[model] += delta
                 prev_total, prev_out = total["total_tokens"], total["output_tokens"]
 
     longest, current = streaks(set(activity))
     return {
         "model_tokens": dict(model_tokens),
         "model_output": dict(model_output),
+        "recent_tokens": recent,
         "sessions": sessions,
         "turns": turns,
         "activity": dict(activity),
@@ -240,6 +282,13 @@ def model_lines(model_tokens, model_output):
     return lines
 
 
+def recent_fav(summary):
+    recent = summary["recent_tokens"]
+    if not recent:
+        return "—"
+    return pretty_model(max(recent, key=recent.get))
+
+
 def block(command, lines):
     body = "\n".join(html.escape(l) for l in lines)
     return (
@@ -255,13 +304,12 @@ def render(claude, codex):
     out = []
 
     # ---- Claude Code --------------------------------------------------------
-    c_fav = max(claude["model_tokens"], key=claude["model_tokens"].get)
     c_days = len(claude["activity"])
     c_span = (today - claude["first"]).days + 1
     c_long, c_cur = streaks(set(claude["activity"]))
     lines = ["  Claude Code · Overview", ""]
     lines += kv([
-        ("Favorite model", pretty_model(c_fav)),
+        ("Recent favorite", recent_fav(claude)),
         ("Total tokens", fmt_tokens(sum(claude["model_tokens"].values())) + "  (incl. cache)"),
         ("Sessions", f"{claude['sessions']:,}"),
         ("Messages", f"{claude['messages']:,}"),
@@ -279,12 +327,11 @@ def render(claude, codex):
 
     # ---- Codex --------------------------------------------------------------
     if codex["sessions"]:
-        x_fav = max(codex["model_tokens"], key=codex["model_tokens"].get)
         x_span = (today - codex["first"]).days + 1
         x_long, x_cur = streaks(set(codex["activity"]))
         lines = ["  Codex · Overview", ""]
         lines += kv([
-            ("Favorite model", x_fav),
+            ("Recent favorite", recent_fav(codex)),
             ("Total tokens", fmt_tokens(sum(codex["model_tokens"].values())) + "  (incl. cache)"),
             ("Sessions", f"{codex['sessions']:,}"),
             ("Turns", f"{codex['turns']:,}"),
