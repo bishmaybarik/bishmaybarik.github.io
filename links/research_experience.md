@@ -7,16 +7,17 @@ title: Research Experience
 ### Research Associate (July 2025 - Present)
 **Organisation:** [Centre for Advanced Financial Research and Learning (CAFRAL)](https://www.cafral.org.in/), Reserve Bank of India
 
-- Designing and maintaining data pipelines to process and clean large, complex datasets, ensuring reliability, scalability, and reproducibility in empirical workflows.
-- Leveraging parallelization across multiple cores to improve computational efficiency and substantially reduce run times when working with high-volume data.
+- Working on two large projects: a typology of the complaints people file with the Banking Ombudsman (with CEPD), and a study of cyber frauds in India (with DoS).
+- Built the natural language processing and machine learning behind both projects, sorting over 150,000 complaints written in English, Hindi and Hinglish into policy-relevant categories, with human review to check the results.
+- Used agentic AI workflows, calling OpenAI and Anthropic models over their APIs to run this at scale, masking all personal information before any data left the machine, and shared the findings as interactive dashboards.
 
 ### Research Assistant (May 2025 - Dec 2025)
 **PI:** [Dr. John Stachurski](https://johnstachurski.net)
 
 **Organisation:** [QuantEcon](https://quantecon.org/)
 
-- Designing open-access undergraduate economics course using Pyodide/WebAssembly for real-time simulation, teaching scientific computing for inequality, resource scarcity, and climate change.
-- Enhancing QuantEcon's intermediate Python lectures by rewriting selected series with JAX, improving computational efficiency, numerical accuracy, and scalability.
+- Designed an open-access undergraduate economics course using Pyodide/WebAssembly for real-time simulation, teaching scientific computing for inequality, resource scarcity, and climate change.
+- Rewrote selected series of QuantEcon's intermediate Python lectures in JAX, improving computational efficiency, numerical accuracy, and scalability.
 
 ### Data Science Intern (Mar - Sept 2025)
 **PI:** [Dr. Paul Novosad](https://paulnovosad.com/)

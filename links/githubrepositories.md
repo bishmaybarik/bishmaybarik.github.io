@@ -5,7 +5,20 @@ title: Public Goods
 
 # Public Goods: Selected GitHub Repositories
 
-Here are some of the projects I’ve worked on that I’d like to showcase. The repository data below is fetched live from GitHub!
+Here are some of the projects I’ve worked on that I’d like to showcase.
+
+## Historical Population Census 1931: Jati Counts across Granular Regions (2026)
+
+Transcribes caste (jati) population counts from 26 scanned provincial and princely-state volumes of the 1931 Census (Imperial Table XVII) into a labelled Stata panel: **69,305 rows** across 49 provinces/states, **1,849 caste names** and 1,200 districts, towns and tehsils, with a generated codebook and validation report.
+
+- Computer-vision page segmentation (OpenCV ink-projection profiles, Tesseract deskewing) cuts each table into tiles along its own column boundaries before any model call.
+- Two independent vision-model readings per tile via the Anthropic Batch API, validated with column-alignment, sex-sum and geographic-hierarchy checks.
+
+*Tools: Python (OpenCV, pdfplumber, NumPy, pandas), Anthropic Batch API, Poppler, Stata*
+
+## Repositories
+
+The repository data below is fetched live from GitHub!
 
 <div id="repositories"></div>
 

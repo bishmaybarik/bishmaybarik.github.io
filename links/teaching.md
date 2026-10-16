@@ -5,6 +5,15 @@ title: Teaching
 
 ## Teaching Experience
 
+### CAFRAL and Reserve Bank of India
+**AI Workshops and Training**
+
+- **Agentic coding with Claude Code (Mar 2026)**  
+  Five sessions for the CAFRAL Research Team: skills and sub-agents, compound engineering workflows, running Stata and Python through AI agents, and sandboxing agents in Docker. Followed by a hands-on session writing a paper end to end using these tools.
+
+- **AI tools and workflows (3 Aug 2026)**  
+  Session for CAFRAL Learning and Administration, introducing AI tools and workflow techniques.
+
 ### Shiv Nadar University
 **Graduate Teaching Assistant** for the following courses during my M.Sc. Economics course at Shiv Nadar University, India:
 

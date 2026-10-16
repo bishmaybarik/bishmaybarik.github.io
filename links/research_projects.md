@@ -6,6 +6,16 @@ layout: default
 
 ---
 
+## Work in Progress
+
+### Consumption Dispersion, Jati Networks, and Risk-Sharing in India
+
+**with** [Dr. Satyajit Chatterjee](https://sites.google.com/site/chatterjeesatyajit/home), [Dr. Ashwini Deshpande](https://www.ashoka.edu.in/profile/ashwini-deshpande/) & [Dr. Nirupama Kulkarni](https://www.nirupamakulkarni.com)
+
+**Abstract:** Social networks shape households' ability to insure against income shocks. We show that consumption risk-sharing in India is organised around jati networks, highlighting the continued importance of informal institutions.
+
+---
+
 ## Master's Dissertation (M.Sc. Economics, Shiv Nadar University, India)
 
 ### 1. Caste in Stone? Cultural Distance and the Education Game
